@@ -1,36 +1,38 @@
-# 🏦 ATM Machine Project in Java
+# 🏨 Hotel Management System  
 
-## 📌 Overview
-This is a simple **ATM Machine simulation project** built using **Core Java**.  
-It demonstrates the use of **Object-Oriented Programming (OOPs)**,  
-**loops, conditionals, and Scanner input**.  
-
-The system allows users to:
-- Authenticate with a PIN (3 attempts allowed).
-- Check account balance.
-- Withdraw money.
-- Deposit money.
-- Exit the system safely.
+A **Java Swing-based Hotel Management System** that provides a simple and interactive GUI to manage hotel operations such as adding employees, rooms, and drivers. This project demonstrates the use of **JDBC, MySQL database, and Java Swing** for creating a desktop-based application.
 
 ---
 
-## ⚙️ Features
-✅ PIN Authentication (with maximum 3 attempts)  
-✅ Check Account Balance  
-✅ Withdraw Money (with balance check)  
-✅ Deposit Money  
-✅ User-friendly menu-driven interface  
-✅ Encapsulated methods for clean OOP structure  
+## ✨ Features
+- 🧑‍💼 Add and manage hotel employees  
+- 🚪 Add and manage hotel rooms  
+- 🚖 Add and manage drivers  
+- 🎨 Interactive GUI built using **Java Swing**  
+- 🗄 Database integration with **MySQL**  
 
 ---
 
-## 🛠️ Technologies Used
-- **Java** (Core Java, OOPs, Scanner Class)  
-- **Git & GitHub** (Version Control & Hosting)  
+## 🛠️ Tech Stack
+- **Language**: Java  
+- **GUI**: Java Swing, AWT  
+- **Database**: MySQL  
+- **Version Control**: Git & GitHub  
 
 ---
 
-## 🚀 How to Run
-1. Clone the repository:
+## 📂 Database Tables
+- **employees** → Stores employee details  
+- **rooms** → Stores room details  
+- **drivers** → Stores driver details  
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/skssaksham208/Hotel-Management-System.git
+
    ```bash
    git clone https://github.com/<your-username>/ATM-Java-Project.git
