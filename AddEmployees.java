@@ -1,8 +1,5 @@
-import java.awt.Color;
-import java.awt.Font;
-import java.awt.Image;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.*;
+import java.awt.event.*;
 import javax.swing.*;
 
 public class AddEmployees extends JFrame implements ActionListener {
@@ -16,7 +13,7 @@ public class AddEmployees extends JFrame implements ActionListener {
         getContentPane().setBackground(Color.WHITE);
         setBounds(350, 200, 850, 540);
         setTitle("Add Employee");
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE); // important fix
 
         JLabel lblname = new JLabel("NAME");
         lblname.setBounds(60, 30, 120, 30);
@@ -41,7 +38,6 @@ public class AddEmployees extends JFrame implements ActionListener {
         lblgender.setFont(new Font("Tahoma", Font.PLAIN, 17));
         add(lblgender);
 
-        
         rbmale = new JRadioButton("Male");
         rbmale.setBounds(200, 130, 70, 30);
         rbmale.setFont(new Font("Tahoma", Font.PLAIN, 14));
@@ -123,6 +119,7 @@ public class AddEmployees extends JFrame implements ActionListener {
         setVisible(true);
     }
 
+    @Override
     public void actionPerformed(ActionEvent ae) {
         String name = tfname.getText();
         String age = tfage.getText();
@@ -142,11 +139,8 @@ public class AddEmployees extends JFrame implements ActionListener {
 
         try {
             conn conn = new conn();
-
-
             String query = "INSERT INTO employees (name, age, gender, job, salary, phone, email, adhaar) " +
                            "VALUES ('" + name + "', '" + age + "', '" + gender + "', '" + job + "', '" + salary + "', '" + phone + "', '" + email + "', '" + adhaar + "')";
-
             conn.s.executeUpdate(query);
             JOptionPane.showMessageDialog(null, "Employee added successfully");
 
