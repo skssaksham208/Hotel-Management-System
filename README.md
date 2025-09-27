@@ -34,5 +34,3 @@ A **Java Swing-based Hotel Management System** that provides a simple and intera
 ```bash
 git clone https://github.com/skssaksham208/Hotel-Management-System.git
 
-   ```bash
-   git clone https://github.com/<your-username>/ATM-Java-Project.git
